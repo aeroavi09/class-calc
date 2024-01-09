@@ -1,0 +1,60 @@
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f2f1ef;
+    }
+
+    .header {
+        background-color: #d9d2cc;
+        color: #723e31;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #addButton {
+        margin-top: 10px;
+        background-color: #d9b18e;
+        color: #fff;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .addedCourses {
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        margin: 10px;
+        background-color: #a67564;
+        width: 200px;
+        height: 350px;
+    }
+
+    @media (max-width: 576px) {
+        .container {
+            align-items: center;
+        }
+    }
+
+    button {
+        background-color: transparent;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    #gpa {
+        border-radius: 10px;
+        background-color: #d9d2cc;
+        color: #723e31;
+    }
