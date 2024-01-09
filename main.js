@@ -52,9 +52,33 @@ function deleteCourse(courseNum) {
 }
 
 function updateGPA() {
-    document.getElementById('calculated').innerText = calculateWeightedGPA();
-    document.getElementById('calculated-unweighted').innerText = calculateUnweightedGPA();
+    const calculatedWeightedGPA = calculateWeightedGPA();
+    const calculatedUnweightedGPA = calculateUnweightedGPA();
+
+    // Update the overall GPA display
+    document.getElementById('calculated').innerText = calculatedWeightedGPA;
+    document.getElementById('calculated-unweighted').innerText = calculatedUnweightedGPA;
+
+    // Update the GPA values for each course
+    for (let i = 1; i <= courseNumber; i++) {
+        const gradeNumLabel = document.getElementById(`gradeNum${i}`);
+        const grade = document.getElementById(`grade${i}`).value;
+        const type = document.getElementById(`type${i}`).value;
+
+        let courseGPA = 0.0;
+
+        if (type === 'Honors/AP') {
+            courseGPA = (grade === 'A' ? 5.0 : (grade === 'B' ? 4.0 : (grade === 'C' ? 3.0 : (grade === 'D' ? 1.0 : 0.0))));
+        } else if (type === 'Accelerated') {
+            courseGPA = (grade === 'A' ? 4.5 : (grade === 'B' ? 3.5 : (grade === 'C' ? 2.5 : (grade === 'D' ? 1.0 : 0.0))));
+        } else {
+            courseGPA = (grade === 'A' ? 4.0 : (grade === 'B' ? 3.0 : (grade === 'C' ? 2.0 : (grade === 'D' ? 1.0 : 0.0))));
+        }
+
+        gradeNumLabel.innerText = courseGPA.toFixed(2);
+    }
 }
+
 
 function calculateWeightedGPA() {
     let weightedGPA = 0.0;
