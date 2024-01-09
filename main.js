@@ -28,6 +28,7 @@ function createDiv() {
     <hr>
     <center>
         <label id="gradeNum${courseNumber}">4.00</label>
+        <br>
         <button class="deleteButton" onclick="deleteCourse(${courseNumber})">x</button>
     </center>`;
 
@@ -42,6 +43,9 @@ function deleteCourse(courseNum) {
     // Remove the course div
     const courseDiv = document.getElementById(`gradeNum${courseNum}`).parentNode.parentNode;
     courseDiv.parentNode.removeChild(courseDiv);
+
+    // Decrease courseNumber after deleting a course
+    courseNumber -= 1;
 
     // Update GPA after deleting a course
     updateGPA();
@@ -68,7 +72,9 @@ function calculateWeightedGPA() {
         }
     }
 
-    weightedGPA /= courseNumber;
+    if (courseNumber > 0) {
+        weightedGPA /= courseNumber;
+    }
 
     return weightedGPA.toFixed(2);
 }
@@ -82,7 +88,9 @@ function calculateUnweightedGPA() {
         unweightedGPA += (grade === 'A' ? 4.0 : (grade === 'B' ? 3.0 : (grade === 'C' ? 2.0 : (grade === 'D' ? 1.0 : 0.0))));
     }
 
-    unweightedGPA /= courseNumber;
+    if (courseNumber > 0) {
+        unweightedGPA /= courseNumber;
+    }
 
     return unweightedGPA.toFixed(2);
 }
