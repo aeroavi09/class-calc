@@ -9,7 +9,7 @@ function createDiv() {
     newDiv.className = "addedCourses";
     newDiv.innerHTML = `
     <p>Course ${courseNumber}</p>
-    <button class="deleteButton" onclick="deleteCourse(${courseNumber})">x</button>
+    
     <label for="grade${courseNumber}">Select Grade:</label>
     <select id="grade${courseNumber}" onchange="updateGPA()">
         <option value="A">A</option>
@@ -28,6 +28,7 @@ function createDiv() {
     <hr>
     <center>
         <label id="gradeNum${courseNumber}">4.00</label>
+        <button class="deleteButton" onclick="deleteCourse(${courseNumber})">x</button>
     </center>`;
 
     // Append the new div to the body
