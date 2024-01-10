@@ -27,7 +27,11 @@ function createDiv() {
     </select>
     <hr>
     <center>
+        <br>
+        <label> GPA Value: </label>
+        <br>
         <label id="gradeNum${courseNumber}">4.00</label>
+        <br>
         <br>
         <button class="deleteButton" onclick="deleteCourse(${courseNumber})">x</button>
     </center>`;
