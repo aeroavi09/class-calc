@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-    background-color: #6b8e23; /* Dark Olive Green */
+    background-color: #fae661; /* Gold */
     color: #fff; /* White */
     text-align: center;
     padding: 20px;
@@ -13,8 +13,8 @@ body {
 
 #addButton {
     margin-top: 10px;
-    background-color: #ffd700; /* Gold */
-    color: #000; /* Black */
+    background-color: #fae661 /* Gold */
+    color: #fff; /* White */
 }
 
 .container {
@@ -28,7 +28,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
     margin: 10px;
-    background-color: #008000; /* Green */
+    background-color: #6b8e23; /* Green */
     width: 200px;
     height: 350px;
     color: #fff; /* White */
