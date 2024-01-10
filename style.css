@@ -1,61 +1,61 @@
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: #f2f1ef;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f1ef;
+}
 
-    .header {
-        background-color: #d9d2cc;
-        color: #723e31;
-        text-align: center;
-        padding: 20px;
-    }
+.header {
+    background-color: #6b8e23; /* Dark Olive Green */
+    color: #fff; /* White */
+    text-align: center;
+    padding: 20px;
+}
 
-    #addButton {
-        margin-top: 10px;
-        background-color: #d9b18e;
-        color: #fff;
-    }
+#addButton {
+    margin-top: 10px;
+    background-color: #ffd700; /* Gold */
+    color: #000; /* Black */
+}
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.addedCourses {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px;
+    background-color: #008000; /* Green */
+    width: 200px;
+    height: 350px;
+    color: #fff; /* White */
+}
+
+@media (max-width: 576px) {
     .container {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
+}
 
-    .addedCourses {
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        padding: 10px;
-        margin: 10px;
-        background-color: #a67564;
-        width: 200px;
-        height: 350px;
-        color: #fff;
-    }
+button {
+    background-color: transparent;
+    color: #fff; /* White */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-    @media (max-width: 576px) {
-        .container {
-            align-items: center;
-        }
-    }
+button:hover {
+    background-color: #0056b3;
+}
 
-    button {
-        background-color: transparent;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    button:hover {
-        background-color: #0056b3;
-    }
-
-    #gpa {
-        border-radius: 10px;
-        background-color: #d9d2cc;
-        color: #723e31;
-    }
+#gpa {
+    border-radius: 10px;
+    background-color: #d9d2cc;
+    color: #723e31;
+}
