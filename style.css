@@ -1,19 +1,19 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f2f1ef;
+    background-color: #fff;
 }
 
 .header {
-    background-color: #fae661; /* Gold */
-    color: #fff; /* White */
+    background-color: #fff; /* Gold */
+    color: #723e31; /* White */
     text-align: center;
     padding: 20px;
 }
 
 #addButton {
     margin-top: 10px;
-    background-color: #fae661 /* Gold */
+    background-color: #fff /* Gold */
     color: #fff; /* White */
 }
 
@@ -28,10 +28,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
     margin: 10px;
-    background-color: #6b8e23; /* Green */
+    background-color: #fff; /* Green */
     width: 200px;
     height: 350px;
-    color: #fff; /* White */
+    color: #723e31; /* White */
 }
 
 @media (max-width: 576px) {
@@ -42,7 +42,7 @@ body {
 
 button {
     background-color: transparent;
-    color: #fff; /* White */
+    color: #723e31; /* White */
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -51,11 +51,11 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #fff;
 }
 
 #gpa {
     border-radius: 10px;
-    background-color: #d9d2cc;
+    background-color: #ffff;
     color: #723e31;
 }
