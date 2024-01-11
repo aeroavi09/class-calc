@@ -8,8 +8,9 @@ function createDiv() {
     // Set some attributes for the div (you can customize these)
     newDiv.className = "addedCourses";
     newDiv.innerHTML = `
-    <p>Course ${courseNumber}</p>
-    
+    <center>
+    <p style="font-size: 36px;">Course ${courseNumber}</p>
+    </center>
     <label for="grade${courseNumber}">Select Grade:</label>
     <select id="grade${courseNumber}" onchange="updateGPA()">
         <option value="A">A</option>
