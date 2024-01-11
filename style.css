@@ -1,20 +1,20 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #CAD4DF;
 }
 
 .header {
-    background-color: #fff; /* Gold */
-    color: #723e31; /* White */
+    background-color: #DDDBDE; /* Gold */
+    color: #3B373B; /* White */
     text-align: center;
     padding: 20px;
 }
 
 #addButton {
     margin-top: 10px;
-    background-color: #fff /* Gold */
-    color: #fff; /* White */
+    background-color: #656577 /* Gold */
+    color: #3B373B; /* White */
 }
 
 .container {
@@ -28,10 +28,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
     margin: 10px;
-    background-color: #fff; /* Green */
+    background-color: #CAD4DF; /* Green */
     width: 200px;
     height: 350px;
-    color: #723e31; /* White */
+    color: #3B373B; /* White */
 }
 
 @media (max-width: 576px) {
@@ -42,7 +42,7 @@ body {
 
 button {
     background-color: transparent;
-    color: #723e31; /* White */
+    color: #3B373B; /* White */
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -51,11 +51,11 @@ button {
 }
 
 button:hover {
-    background-color: #fff;
+    background-color: #656577;
 }
 
 #gpa {
     border-radius: 10px;
     background-color: #ffff;
-    color: #723e31;
+    color: #3B373B;
 }
