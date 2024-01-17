@@ -1,20 +1,19 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #CAD4DF;
+    background-color: #CAD4DF; /* Off-White 2*/
 }
 
 .header {
-    background-color: #DDDBDE; /* Gold */
-    color: #3B373B; /* White */
+    background-color: #DDDBDE; /* Off-White */
+    color: #3B373B; /* Dark-grey */
     text-align: center;
     padding: 20px;
 }
 
 #addButton {
     margin-top: 10px;
-    background-color: #656577 /* Gold */
-    color: #3B373B; /* White */
+    color: #3B373B; /* Dark-grey */
 }
 
 .container {
@@ -25,13 +24,13 @@ body {
 
 .addedCourses {
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
     padding: 10px;
     margin: 10px;
-    background-color: #CAD4DF; /* Green */
+    background-color: #CAD4DF; /* Off-White 2*/
     width: 200px;
     height: 350px;
-    color: #3B373B; /* White */
+    color: #3B373B; /* Dark-Grey */
 }
 
 @media (max-width: 576px) {
@@ -41,21 +40,22 @@ body {
 }
 
 button {
-    background-color: transparent;
-    color: #3B373B; /* White */
+    background-color: #CAD4DF;
+    color: #656577;
     padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
     background-color: #656577;
+    color: #CAD4DF;
 }
 
 #gpa {
     border-radius: 10px;
     background-color: #ffff;
-    color: #3B373B;
+    color: #3B373B; /* Dark-grey */
 }
